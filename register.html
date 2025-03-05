@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechView | Trang chủ</title>
+    <title>TechView | Đăng Kí</title>
     
     <!-- Embed fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,9 +78,9 @@
                 <div class="header__menu">
                     <div class="header__menu-category">
                         <h3>Tất cả danh mục</h3>
-                        <i class="header__menu-icon fa-solid fa-sort-down"></i>
+                        <!-- <i class="header__menu-icon fa-solid fa-sort-down"></i> -->
                     </div>
-                    <ul class="header__list">
+                    <!-- <ul class="header__list">
                         <li class="list-item">ỐNG NHÒM</li>
                         <li class="list-item">CELESTRON</li>
                         <li class="list-item">APOLLO</li>
@@ -91,7 +91,7 @@
                         <li class="list-item">THIẾT BỊ CHỤP ẢNH</li>
                         <li class="list-item">ĐỒ THIÊN VĂN</li>
                         <li class="list-item">LINH KIỆN</li>
-                    </ul>
+                    </ul> -->
 
                 </div>
                 <nav class="navbar">
@@ -108,29 +108,47 @@
     </header>
 
     <main>
-        <section class="section-banner">
+        <section class="section-register">
             <div class="container">
-                <div class="banner">
-                    <div class="sub-menu"></div>
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <div class="numbertext"></div>
-                            <img class="slideshow-img" src="./asset/img/banner1.png" style="width:100%">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <div class="numbertext"></div>
-                            <img class="slideshow-img" src="./asset/img/banner2.jpg" style="width:100%">
-                            <div class="text">Caption Two</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <div class="numbertext"></div>
-                            <img class="slideshow-img" src="./asset/img/banner3.jpg" style="width:100%">
-                            <div class="text">Caption Three</div>
-                        </div>
+                <div class="register">
+                    <div class="register-title">
+                        <a class="login__link" href="">Login</a>
+                        <a class="register__link" href="">Register</a>
                     </div>
+
+                    <form action="" class="register-form">
+                        <div class="form-group">
+                            <label for="">Họ tên&nbsp;<span class="required">&nbsp;</span>:</label>
+                            <input class="input-field" type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email&nbsp;<span class="required">&nbsp;</span>:</label>
+                            <input class="input-field" type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mật khẩu&nbsp;<span class="required">&nbsp;</span>:</label>
+                            <div class="input-item">
+                                <input class="input-field" type="password" name="password" id="password">
+                                <i class="input-icon fa-regular fa-eye toggle-password" data-target="password"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập lạ mật khẩu&nbsp;<span class="required">&nbsp;</span>:</label>
+                            <div class="input-item">
+                                <input class="input-field" type="password" name="confirm_password" id="confirm_password">
+                                <i class="input-icon fa-regular fa-eye toggle-password" data-target="confirm_password"></i>
+                            </div>
+                        </div>
+
+                        <button class="btn-reg">ĐĂNG KÍ</button>
+                        <!-- <div class="remember-forgot"> 
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-check">
+                                <span class="remember">Lưu mật khẩu</span>
+                            </div>
+                            <a href="" class="forget-password">Quên mật khẩu</a>
+                        </div> -->
+                    </form>
                 </div>
             </div>
         </section>
