@@ -217,6 +217,7 @@ body {
 .header__list.active {
     display: none;
 }
+
 .list-item {
     color: var(--text-primary);
     margin-bottom: 24px;
@@ -313,11 +314,11 @@ body {
 }
 
 /* register  */
-.section-register {
+.section-register, .section-login {
     margin-top: 88px;
 }
 
-.register {
+.register, .login {
     width: 530px;
     height: 580px;
     padding: 60px;
@@ -325,7 +326,7 @@ body {
     border: 0.5px solid var(--text-desc);
     border-radius: 8px;
 }
-.register-title {
+.register-title, .login-title {
     display: flex;
     justify-content: center;
     margin-bottom: 28px;
@@ -333,16 +334,20 @@ body {
 .register__link, .login__link {
     text-decoration: none;
     padding: 8px;
-    color: var(--text-primary);
+    color: var(--text-desc);
     font-size: 1.8rem;
     font-weight: 600;
 }
 .register__link {
     margin-left: 40px;
 }
-.login__link {
-    color: var(--text-desc);
+
+.auth-link.active {
+    color: var(--text-primary);
+    background: none;
 }
+
+
 /* form register */
 .form-group {
     display: flex;
@@ -389,7 +394,7 @@ label {
     color: var(--text-desc);
     transition: color 0.3s;
 }
-.btn-reg {
+.btn-reg, .btn-log, .btn-gg {
     width: 100%;
     min-height: 42px;
     padding: 0 20px;
@@ -401,14 +406,41 @@ label {
     background: #F1F3F5;
     transition: 0.25s;
 }
+.btn-gg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-primary);
+
+}
+.icon-gg {
+    margin-right: 12px;
+}
+.auth-divider {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-desc);
+    text-align: center;
+}
+
 .btn-reg:hover {
     background: #DEE2E6;
 
 }
-/* .remember-forgot {
+.btn-log:hover {
+    background: #DEE2E6;
+} 
+.btn-gg:hover {
+    background: #DEE2E6;
+} 
+
+.remember-forgot {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 12px 0;
 }
 .remember-me {
     display: flex;
@@ -419,15 +451,16 @@ label {
 }
 .remember {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 6px;
     color: var(--text-primary);
 }
 .forget-password {
     text-decoration: none;
     font-size: 1.3rem;
+    font-weight: 500;
     color: var(--primary);
-} */
+}
 
 
 

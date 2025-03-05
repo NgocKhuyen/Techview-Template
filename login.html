@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechView | Đăng Kí</title>
+    <title>TechView | Đăng Nhập</title>
     
     <!-- Embed fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,19 +108,15 @@
     </header>
 
     <main>
-        <section class="section-register">
+        <section class="section-login">
             <div class="container">
-                <div class="register">
-                    <div class="register-title">
+                <div class="login">
+                    <div class="login-title">
                         <a class="login__link auth-link" href="login.html">Login</a>
                         <a class="register__link auth-link" href="register.html">Register</a>
                     </div>
 
-                    <form action="" class="register-form">
-                        <div class="form-group">
-                            <label for="">Họ tên&nbsp;<span class="required">&nbsp;</span>:</label>
-                            <input class="input-field" type="text" name="name" id="name">
-                        </div>
+                    <form action="" class="login-form">
                         <div class="form-group">
                             <label for="">Email&nbsp;<span class="required">&nbsp;</span>:</label>
                             <input class="input-field" type="email" name="email" id="email">
@@ -132,15 +128,20 @@
                                 <i class="input-icon fa-regular fa-eye toggle-password" data-target="password"></i>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="">Nhập lại mật khẩu&nbsp;<span class="required">&nbsp;</span>:</label>
-                            <div class="input-item">
-                                <input class="input-field" type="password" name="confirm_password" id="confirm_password">
-                                <i class="input-icon fa-regular fa-eye toggle-password" data-target="confirm_password"></i>
-                            </div>
-                        </div>
 
-                        <button class="btn-reg">ĐĂNG KÍ</button>
+                        <div class="remember-forgot"> 
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-check">
+                                <span class="remember">Lưu mật khẩu</span>
+                            </div>
+                            <a href="" class="forget-password">Quên mật khẩu?</a>
+                        </div>
+                        <button class="btn-log">ĐĂNG NHẬP</button>
+                        <p class="auth-divider">Hoặc</p>
+                        <a class="btn-gg" href="#">
+                            <img class="icon-gg" src="./asset/icons/gg-icon.svg" alt="">
+                            Đăng nhập bằng google
+                        </a>
                     </form>
                 </div>
             </div>

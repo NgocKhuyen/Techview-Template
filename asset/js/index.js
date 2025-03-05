@@ -36,3 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// Register vs login
+const currentPage = window.location.pathname;
+// Duyệt qua tất cả các link có class "auth-link"
+document.querySelectorAll(".auth-link").forEach(link => {
+    if (currentPage.includes(link.getAttribute("href"))) {
+        link.classList.add("active");   
+    }
+});
