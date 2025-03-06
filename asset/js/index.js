@@ -20,18 +20,13 @@ function showSlides() {
 
 // hidden password
 document.addEventListener("DOMContentLoaded", function () {
-    let toggleIcons = document.querySelectorAll(".toggle-password");
-
-    toggleIcons.forEach(icon => {
+    document.querySelectorAll(".toggle-password").forEach(icon => {
         icon.addEventListener("click", function () {
             let input = document.getElementById(this.getAttribute("data-target"));
-
-            if (input.type === "password") {
-                input.type = "text";
-                this.classList.replace("fa-eye", "fa-eye-slash");
-            } else {
-                input.type = "password";
-                this.classList.replace("fa-eye-slash", "fa-eye");
+            if (input) {
+                input.type = input.type === "password" ? "text" : "password";
+                this.classList.toggle("fa-eye-slash");
+                this.classList.toggle("fa-eye");
             }
         });
     });
@@ -44,3 +39,65 @@ document.querySelectorAll(".auth-link").forEach(link => {
         link.classList.add("active");   
     }
 });
+// 
+document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".title-info");
+    const sections = document.querySelectorAll(".content-section");
+
+    // Mặc định đặt "Thông tin tài khoản" là active
+    tabs[0].classList.add("section-active");
+    sections[0].classList.add("section-active");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", function () {
+            // Xóa class section-active khỏi tất cả
+            tabs.forEach(t => t.classList.remove("section-active"));
+            sections.forEach(s => s.classList.remove("section-active"));
+
+            // Thêm class section-active vào phần tử được click
+            this.classList.add("section-active");
+            sections[index].classList.add("section-active");
+        });
+    });
+});
+// modal
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("modal_address");
+    const overlay = document.querySelector(".modal_overlay");
+    const btnAdd = document.querySelector(".btn-address");
+    const btnEdit = document.querySelector(".btn-edit");
+    const btnClose = document.querySelectorAll(".close-modal");
+    const btnSubmit = document.querySelector(".btn-add");
+    const title = document.querySelector(".title-address");
+
+    function openModal(mode) {
+        modal.style.display = "block";
+        overlay.style.display = "block";
+
+        if (mode === "add") {
+            title.textContent = "THÊM ĐỊA CHỈ";
+            btnSubmit.textContent = "THÊM ĐỊA CHỈ";
+        } else {
+            title.textContent = "CẬP NHẬT ĐỊA CHỈ";
+            btnSubmit.textContent = "CẬP NHẬT ĐỊA CHỈ";
+        }
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+        overlay.style.display = "none";
+    }
+
+    btnAdd.addEventListener("click", function () {
+        openModal("add");
+    });
+
+    btnEdit.addEventListener("click", function () {
+        openModal("edit");
+    });
+
+    btnClose.forEach(btn => btn.addEventListener("click", closeModal));
+
+    overlay.addEventListener("click", closeModal);
+});
+

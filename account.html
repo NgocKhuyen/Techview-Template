@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechView | Tài khoản</title>
+    
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="icon" type="image/x-icon" href="./asset/img/logo.png">
+    <!-- Nhúng font awesome  -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+</head>
+<body>
+    <p class="line"></p>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <p class="header__top-title">Chào mừng bạn đến với TechView!</p>
+                <div class="header__top-lang">
+                    <p class="header__top-lang--vn">Tiếng việt</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="header__center">
+                <a href="#!" class="logo">
+                    <img src="./asset/img/logo.png" alt="Logo">
+                </a>
+                <div class="search__form-wrapper">
+                    <form action="#" class="search-form">
+                        <input class="search" type="text" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="header__center-item">
+                    <div class="account">
+                        <div class="account__text">
+                            <p class="account__text-title">Tài khoản của tôi</p>
+                            <p class="account__text-desc">Xin chào, đăng nhập</p>
+                        </div>
+                        <div class="account_down">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>  
+                    
+                    <div class="heart">
+                        <div class="heart-item">
+                            <i class="heart-icon fa-regular fa-heart"></i>
+                            <span class="quantity">1</span>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-item">
+                            <i class="cart-icon fa-solid fa-cart-shopping"></i>
+                            <span class="quantity">1</span>
+                        </div>
+                        <div class="cart__desc">
+                            <p class="cart__desc-quantity">0 sản phẩm</p>
+                            <p class="cart__desc-total">0 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__menu">
+                    <div class="header__menu-category">
+                        <h3>Tất cả danh mục</h3>
+                        <!-- <i class="header__menu-icon fa-solid fa-sort-down"></i> -->
+                    </div>
+                    <!-- <ul class="header__list">
+                        <li class="list-item">ỐNG NHÒM</li>
+                        <li class="list-item">CELESTRON</li>
+                        <li class="list-item">APOLLO</li>
+                        <li class="list-item">MEADE</li>
+                        <li class="list-item">SKYWATCHER</li>
+                        <li class="list-item">KTV CAO CẤP</li>
+                        <li class="list-item">KÍNH HIỂN VI</li>
+                        <li class="list-item">THIẾT BỊ CHỤP ẢNH</li>
+                        <li class="list-item">ĐỒ THIÊN VĂN</li>
+                        <li class="list-item">LINH KIỆN</li>
+                    </ul> -->
+
+                </div>
+                <nav class="navbar">
+                    <a class="nav-item" href="#!">Trang chủ</a> 
+                    <a class="nav-item" href="#!">Cửa hàng</a> 
+                    <a class="nav-item" href="#!">Phụ kiện</a> 
+                    <a class="nav-item" href="#!">Combo</a>
+                    <a class="nav-item" href="#!">Tin tức</a>
+                    <a class="nav-item" href="#!">Liên hệ</a>
+                    <a class="nav-item nav-end" href="#!">Trợ giúp</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-account">
+            <div class="container">
+                <div class="account">
+                    <div class="left-ac">
+                        <h5 class="account-title">TÀI KHOẢN</h5>
+                        <p class="account-desc">
+                            Xin chào, 
+                            <span class="account-name">Khuyến Nguyễn&nbsp;!</span>
+                        </p>
+                        <ul class="account__list">
+                            <li class="title-info title-active"><a href="#">Thông tin tài khoản</a></li>
+                            <li class="title-info"><a href="#">Đơn hàng của bạn</a></li>
+                            <li class="title-info"><a href="#">Đổi mật khẩu</a></li>
+                            <li class="title-info"><a href="#">Địa chỉ</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-ac">
+                        <!-- Thông tin tài khoản -->
+                        <section class="account__infor content-section section-active">
+                            <h1 class="title-head">Thông tin tài khoản</h1>
+                            <div class="account__infor-name">
+                                <p class="account__infor-item">
+                                    <strong class="account__infor-title">Họ tên:</strong>
+                                    Khuyến Nguyễn
+                                </p>
+                                <p class="account__infor-item">
+                                    <strong class="account__infor-title">Email:</strong>
+                                    ngockhuyen2k2@gmnail.com
+                                </p>
+                                <p class="account__infor-item">
+                                    <strong class="account__infor-title">Điện thoại:</strong>
+                                    0911258142
+                                </p>
+                                <p class="account__infor-item">
+                                    <strong class="account__infor-title">Địa chỉ:</strong>
+                                    23/8, Quận 12, TP Hồ Chí Minh, Vietnam
+                                </p>
+                            </div>
+                        </section> 
+                        
+                        <!-- Đơn hàng của bạn -->
+                        <section class="order-history content-section">
+                            <h1 class="title-head">Đơn hàng của bạn</h1>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Đơn hàng</td>
+                                        <td>Ngày</td>
+                                        <td>Địa chỉ</td>
+                                        <td>Giá trị đơn hàng</td>
+                                        <td>TT đơn hàng</td>
+                                        <td>TT thanh toán</td>
+                                        <td>TT vận chuyển</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DH001</td>
+                                        <td>05/03/2025</td>
+                                        <td>23/8, Quận 12, TP Hồ Chí Minh, Vietnam</td>
+                                        <td>1.500.000đ</td>
+                                        <td>Đang xử lý</td>
+                                        <td>Tiền mặt</td>
+                                        <td>Giao hàng tiết kiệm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DH002</td>
+                                        <td>05/03/2025</td>
+                                        <td>23/8, phường Đông Hưng Thuận, Quận 12, TP Hồ Chí Minh</td>
+                                        <td>1.500.000đ</td>
+                                        <td>Đang giao</td>
+                                        <td>Tiền mặt</td>
+                                        <td>Giao hàng tiết kiệm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    
+                        <!-- Đổi mật khẩu -->
+                        <section class="change-password content-section">
+                            <h1 class="title-head">Đổi mật khẩu</h1>
+                            <form action="" class="change__password-form">
+                                <div class="form-group">
+                                    <label for="">Mật khẩu cũ<span class="required">&nbsp;</span>:</label>
+                                    <div class="input-item">
+                                        <input class="input-field" type="password" name="old-password" id="old-password">
+                                        <i class="input-icon fa-regular fa-eye toggle-password" data-target="old-password"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mật khẩu mới<span class="required">&nbsp;</span>:</label>
+                                    <div class="input-item">
+                                        <input class="input-field" type="password" name="new-password" id="new-password">
+                                        <i class="input-icon fa-regular fa-eye toggle-password" data-target="new-password"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Nhập lại mật khẩu<span class="required">&nbsp;</span>:</label>
+                                    <div class="input-item">
+                                        <input class="input-field" type="password" name="confirm_password" id="confirm_password">
+                                        <i class="input-icon fa-regular fa-eye toggle-password" data-target="confirm_password"></i>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-change">Đặt lại mật khẩu</button>
+                            </form>
+                        </section>
+                    
+                        <!-- Địa chỉ -->
+                        <section class="address-info content-section">
+                            <h1 class="title-head">ĐỊA CHỈ CỦA BẠN</h1>
+                            <button type="button" class="btn-address">THÊM ĐỊA CHỈ</button>
+
+                            <div class="address-infor">
+                                <div class="left-info">
+                                    <p class="account__infor-item">
+                                        <strong class="account__infor-title">Họ tên:</strong>
+                                        Khuyến Nguyễn
+                                        <span class="address-default">Địa chỉ mặc định</span>
+                                    </p>
+                                    <p class="account__infor-item">
+                                        <strong class="account__infor-title">Địa chỉ:</strong>
+                                        23/8, Quận 12, TP Hồ Chí Minh, Vietnam
+                                    </p>
+                                    <p class="account__infor-item">
+                                        <strong class="account__infor-title">Điện thoại:</strong>
+                                        0911258142
+                                    </p>
+                                </div>  
+                                <div class="right-info">
+                                    <button type="button" class="btn-edit">Cập nhật địa chỉ</button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- form thêm địa chỉ -->
+                        <div class="modal_overlay"></div>
+                        <section class="modal_address" id="modal_address">
+                            <div class="modal-header">
+                                <h2 class="title-address">ĐỊA CHỈ CỦA BẠN</h2>
+                                <i class="fa-solid fa-xmark close-modal"></i>
+                            </div>
+                            <form action="" class="address-form">
+                                <div class="address-group">
+                                    <div class="address-item address-item-gap">
+                                        <label for="" class="">Họ và tên:</label>
+                                        <input type="text" class="input-address" name="name">
+                                    </div>
+                                    <div class="address-item">
+                                        <label for="">Số điện thoại:</label>
+                                        <input type="text" class="input-address" name="phone">
+                                    </div>
+                                </div>
+                                <div class="address-item">
+                                    <label for="">Địa chỉ:</label>
+                                    <input type="text" class="input-address" name="address">
+                                </div>
+                                <div class="address-item">
+                                    <label for="">Quốc gia:</label>
+                                    <select name="country" id="">
+                                        <option value="">Việt Nam</option>
+                                    </select>
+                                </div>
+                                <div class="address-group">
+                                    <div class="address-item address-item-gap">
+                                        <label for="">Tỉnh:</label>
+                                        <select name="city" id="">
+                                            <option value="" disabled>Chọn tỉnh thành</option>
+                                            <option value="">Thành phố Hồ Chí Minh</option>
+                                            <option value="">Đồng Nai</option>
+                                            <option value="">Bình Dương</option>
+                                            <option value="">Long An</option>
+                                        </select>
+                                    </div>
+                                    <div class="address-item address-item-gap">
+                                        <label for="">Quận/huyện:</label>
+                                        <select name="district" id="">
+                                            <option value="" disabled>Chọn quận/huyện</option>
+                                            <option value="">Quận 1</option>
+                                            <option value="">Quận 2</option>
+                                            <option value="">Quận 3</option>
+                                            <option value="">Quận 4</option>
+                                            <option value="">Quận 5</option>
+                                            <option value="">Quận 6</option>
+                                            <option value="">Quận 7</option>
+                                            <option value="">Quận 8</option>
+                                            <option value="">Quận 9</option>
+                                            <option value="">Quận 10</option>
+                                            <option value="">Quận 11</option>
+                                            <option value="">Quận 12</option>
+                                        </select>
+                                    </div>
+                                    <div class="address-item">
+                                        <label for="">Phường/xã:</label>
+                                        <select name="ward" id="">
+                                            <option value="" disabled>Chọn phường/xã</option>
+                                            <option value="">Đông Hưng Thuận</option>
+                                            <option value="">An Phú Đông</option>
+                                            <option value="">Thới An</option>
+                                            <option value="">Tân Thới Hiệp</option>
+                                            <option value="">Hiệp Thành</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="default-address">
+                                    <input type="checkbox" name="" id="checkbox">
+                                    <label for="" class="set-default">Đặt làm địa chỉ mặc định?</label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-cancel">Hủy</button>
+                                    <button type="submit" class="btn-add">THÊM ĐỊA CHỈ</button>
+                                    <!-- <button type="submit" class="btn-update">CẬP NHẬT ĐỊA CHỈ</button> -->
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="newsletter">
+                    <div class="newsletter-text">
+                        <i class="text-icon fa-solid fa-envelope-open-text"></i>
+                        <div class="text-body">
+                            <h5 class="text-body__h5">Join our newsletter for £10 offs</h5>
+                            <h3 class="text-body__h3">Get our emails for info on new items, sales and much more.</h3>
+                            <p class="text-body__desc">Register now to get latest updates on promotions & coupons. Don’t worry, we not spam!</p>
+                        </div>
+                    </div>
+                    <div class="newsletter-form">
+                        <div class="newsletter-item">
+                            <input class="newsletter-input" type="email" placeholder="Nhập vào địa chỉ email">
+                            <button class="btn-sub">Đăng kí ngay</button>
+                        </div>
+                        <p class="newsletter-form__desc">Bằng cách đăng kí, bạn đồng ý với <a href="" class="newsletter-form__link">chính sách và điều khoản</a> của chúng tôi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full">
+            <div class="container">
+                <div class="footer-sidebar">
+                    <div class="footer-contact">
+                        <a href="#!" class="footer-logo">
+                            <img src="./asset/img/logo.png" alt="Logo">
+                        </a>
+                        <div class="footer-item">
+                            Hotline: 
+                            <a href="" class="footer-item__link">091125812</a>
+                        </div>
+                        <div class="footer-item">
+                            Email: 
+                            <a href="" class="footer-item__link">techview@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="footer_category">
+                        <h3 class="footer_category__h3">Danh mục sản phẩm</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">ỐNG NHÒM</li>
+                            <li class="footer__list-item">CELESTRON</li>
+                            <li class="footer__list-item">APOLLO</li>
+                            <li class="footer__list-item">MEADE</li>
+                            <li class="footer__list-item">SKYWATCHER</li>
+                            <li class="footer__list-item">KTV CAO CẤP</li>
+                            <li class="footer__list-item">KÍNH HIỂN VI</li>
+                            <li class="footer__list-item">THIẾT BỊ CHỤP ẢNH</li>
+                            <li class="footer__list-item">ĐỒ THIÊN VĂN</li>
+                            <li class="footer__list-item">LINH KIỆN</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_policy">
+                        <h3 class="footer_policy__h3">Chính sách khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">Chính sách bảo mật</li>
+                            <li class="footer__list-item">Chính sách vận chuyển</li>
+                            <li class="footer__list-item">Chính sách đổi trả</li>
+                            <li class="footer__list-item">Quy định sử dụng</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_social">
+                        <h3 class="footer_social__h3">Theo dõi chúng tôi</h3>
+                        <a href="#"><i class="icon-fb fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="icon-yt fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-cript">© Bản quyền thuộc về TechView | Cung cấp bởi TechView</p>
+    </footer>
+   <script src="./asset/js/index.js"></script>
+</body>
+</html>
